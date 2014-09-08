@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "chai": "*",
+    "express": "*",
+    "istanbul": "*",
+    "jscs": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "rewire": "*",
+    "sinon": "*",
+    "supertest": "*"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "hint": "jscs {*.js,lib,test} & jshint . --exclude-path .gitignore",
+    "mocha": "mocha 'test/**/*.test.js' -R spec",
+    "cov": "istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R dot 'test/**/*.test.js'",
+    "test": "jscs {*.js,lib,test} & jshint . --exclude-path .gitignore && istanbul cover --report html ./node_modules/mocha/bin/_mocha -- -R dot 'test/**/*.test.js'"
+  }
+}

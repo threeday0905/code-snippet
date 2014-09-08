@@ -13,7 +13,6 @@
     "requireMultipleVarDecl": null,
 
     "safeContextKeyword": ["that", "self"],
-    "requireYodaConditions": true,
 
     "validateJSDoc": {
         "checkParamNames":      true,
