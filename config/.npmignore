@@ -13,6 +13,7 @@ doc
 # Config
 ############################
 .jshintrc
+.jscsrc
 .editorconfig
 .travis.yml
 
